@@ -37,4 +37,19 @@ class drush(
     repository => 'pear.drush.org',
   }
 
+  file { "/usr/share/drush":
+    ensure => directory,
+    owner => root,
+    group => root,
+    mode => 755,
+  }
+
+  file {  "/usr/share/drush/commands":
+    require => File['/usr/share/drush'],
+    ensure => directory,
+    owner => root,
+    group => root,
+    mode => 755,
+  }
+
 }
