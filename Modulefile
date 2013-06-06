@@ -7,4 +7,4 @@ summary 'Drush Puppet Module'
 description 'A Puppet module to install and execute Drupal commands using Drush.'
 project_page 'http://github.com/erikwebb/erikwebb-drush'
 
-dependency 'rafaelfc/pear'
+dependency 'rafaelfc/pear', ">= 0"
